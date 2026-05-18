@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 2323",
     "lint": "next lint",
     "gen:strokes": "node scripts/gen-strokes.mjs"
   },
