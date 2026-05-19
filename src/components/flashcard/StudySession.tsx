@@ -113,6 +113,7 @@ export function StudySession({ deck, mode, allKana, onExit }: Props) {
 
       {mode === "multiple-choice" && (
         <MultipleChoice
+          key={current.id}
           entry={current}
           pool={allKana}
           onAnswer={(correct) => {
@@ -134,6 +135,7 @@ export function StudySession({ deck, mode, allKana, onExit }: Props) {
 
       {mode === "inverse" && (
         <InverseCard
+          key={current.id}
           entry={current}
           pool={allKana}
           onAnswer={(correct) => {
